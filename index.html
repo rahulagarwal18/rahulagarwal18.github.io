@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Audiowide&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -40,7 +40,7 @@
         .section-title {
             text-align: center;
             font-size: 2.5rem;
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Audiowide', cursive;
             margin-bottom: 3rem;
             background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
             -webkit-background-clip: text;
@@ -221,9 +221,10 @@
         }
 
         .project-card {
-            background: rgba(22, 27, 34, 0.7);
-            border: 1px solid rgba(88, 166, 255, 0.3);
+            background: rgba(10, 15, 35, 0.95);
+            border: 2px solid rgba(0, 212, 255, 0.6);
             border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), inset 0 0 30px rgba(0, 212, 255, 0.08);
             padding: 2rem;
             backdrop-filter: blur(20px);
             transition: all 0.3s ease;
@@ -315,9 +316,10 @@
         }
 
         .skill-category {
-            background: rgba(22, 27, 34, 0.7);
-            border: 1px solid rgba(88, 166, 255, 0.3);
+            background: rgba(10, 15, 35, 0.95);
+            border: 2px solid rgba(168, 85, 247, 0.6);
             border-radius: 12px;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.3), inset 0 0 30px rgba(168, 85, 247, 0.08);
             padding: 2rem;
             backdrop-filter: blur(20px);
             transition: all 0.3s ease;
@@ -445,9 +447,10 @@
         }
 
         .education-box {
-            background: rgba(22, 27, 34, 0.7);
-            border: 1px solid rgba(88, 166, 255, 0.3);
+            background: rgba(10, 15, 35, 0.95);
+            border: 2px solid rgba(0, 212, 255, 0.6);
             border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), inset 0 0 30px rgba(0, 212, 255, 0.08);
             padding: 2rem;
             backdrop-filter: blur(20px);
             max-width: 800px;
@@ -470,9 +473,10 @@
         }
 
         .leadership-card {
-            background: rgba(22, 27, 34, 0.7);
-            border: 1px solid rgba(168, 85, 247, 0.3);
+            background: rgba(10, 15, 35, 0.95);
+            border: 2px solid rgba(236, 72, 153, 0.6);
             border-radius: 12px;
+            box-shadow: 0 0 30px rgba(236, 72, 153, 0.3), inset 0 0 30px rgba(236, 72, 153, 0.08);
             padding: 2rem;
             backdrop-filter: blur(20px);
             transition: all 0.3s ease;
@@ -516,6 +520,17 @@
                 width: 80px;
                 height: 80px;
                 opacity: 0;
+            }
+        }
+
+        @keyframes cardScroll {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
@@ -618,9 +633,10 @@
         }
 
         .hero-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(2.4rem, 4vw, 4rem);
-            font-weight: 800;
+            font-family: 'Audiowide', cursive;
+            font-size: clamp(3.2rem, 6vw, 5.5rem);
+            font-weight: 400;
+            letter-spacing: 1px;
             line-height: 1.1;
             background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
             -webkit-background-clip: text;
@@ -907,8 +923,24 @@
                 font-size: 3rem;
             }
 
-            .object-3d {
-                display: none;
+            #earth-container {
+                width: 180px;
+                height: 180px;
+            }
+
+            #laptop-container {
+                width: 200px;
+                height: 180px;
+            }
+
+            #satellite-container {
+                width: 140px;
+                height: 140px;
+            }
+
+            #rocket-container {
+                width: 150px;
+                height: 150px;
             }
         }
 
@@ -946,7 +978,8 @@
 
         @media (max-width: 520px) {
             .hero-title {
-                font-size: clamp(2rem, 8vw, 2.4rem);
+                font-size: clamp(2rem, 8vw, 3rem);
+                letter-spacing: 0px;
             }
 
             .hero-description {
@@ -1031,7 +1064,6 @@
 
                 <!-- Contact Information -->
                 <div class="contact-info">
-                    <a href="tel:+919461203345" class="contact-link" title="Phone"><i class="fas fa-phone"></i></a>
                     <a href="mailto:rahulagaral1@gmail.com" class="contact-link" title="Email"><i class="fas fa-envelope"></i></a>
                     <a href="https://github.com/rahulagarwal18" target="_blank" class="contact-link" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/rahul-agarwal-lb888823a/" target="_blank" class="contact-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -1156,6 +1188,36 @@
 
                 <h3 style="margin-top: 1.25rem;">Saint Paul School</h3>
                 <p style="color: var(--accent-pink); font-weight: 600;">Commerce (with Information Practices) • Completed: 2023 • Beawar, Rajasthan</p>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="section scroll-section">
+            <h2 class="section-title">Certifications & Awards</h2>
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <h4>🌍 Millennium Fellow (2025)</h4>
+                    <p style="color: var(--accent-cyan); font-size: 0.95rem; margin-bottom: 0.8rem;"><strong>Global Recognition</strong></p>
+                    <p>Prestigious global fellowship recognizing emerging leaders driving impact-aligned initiatives with UN Sustainable Development Goals. Selected from thousands of applicants worldwide to lead transformative projects at the intersection of technology, sustainability, and social impact.</p>
+                </div>
+
+                <div class="leadership-card">
+                    <h4>🥇 National Science Day 2025</h4>
+                    <p style="color: var(--accent-pink); font-size: 0.95rem; margin-bottom: 0.8rem;"><strong>1st Place • CHRIST University</strong></p>
+                    <p>Achieved first place for "Smart Navigation System using IoT & AI" - a revolutionary campus navigation system utilizing autonomous vehicles and real-time data processing for dynamic guidance.</p>
+                </div>
+
+                <div class="leadership-card">
+                    <h4>🥈 National Science Day 2024</h4>
+                    <p style="color: var(--accent-pink); font-size: 0.95rem; margin-bottom: 0.8rem;"><strong>2nd Place • CHRIST University</strong></p>
+                    <p>Secured second place for "Attendance Management System using Face Recognition" - an innovative biometric solution automating identification and time logging with real-time camera capture and audit-ready records.</p>
+                </div>
+
+                <div class="leadership-card">
+                    <h4>🐍 Python Programming Certificate</h4>
+                    <p style="color: var(--accent-cyan); font-size: 0.95rem; margin-bottom: 0.8rem;"><strong>Government of Rajasthan</strong></p>
+                    <p>Professional certification in Python programming from Government of Rajasthan, validating proficiency in core concepts, data structures, and practical application development with Python.</p>
+                </div>
             </div>
         </section>
 
@@ -1801,8 +1863,24 @@
             return group;
         });
 
+        // Mobile scroll animation for cards
+        if (window.innerWidth <= 900) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'cardScroll 0.6s ease-out forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
 
+            // Observe all cards
+            document.querySelectorAll('.project-card, .skill-category, .leadership-card, .education-box').forEach(card => {
+                observer.observe(card);
+            });
+        }
     </script>
+
 </body>
 
 </html>
