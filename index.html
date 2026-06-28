@@ -90,6 +90,54 @@
         .btn-main { padding: 2.2rem 8rem; background: var(--accent); color: black; border-radius: 100px; font-size: 1.8rem; font-weight: 900; border: none; cursor: pointer; transition: 0.4s; text-transform: uppercase; }
         .btn-main:hover { transform: scale(1.05); box-shadow: 0 0 100px var(--accent); }
 
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .project-btn {
+            padding: 0.9rem 1.8rem;
+            border-radius: 10px;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 800;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex: 1;
+        }
+
+        .project-btn.primary {
+            background: var(--accent);
+            color: #000;
+            border: none;
+        }
+
+        .project-btn.primary:hover {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .project-btn.secondary {
+            background: rgba(255, 255, 255, 0.04);
+            color: #fff;
+            border: 1px solid var(--border);
+        }
+
+        .project-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
         footer { padding: 15vh 5% 10vh; text-align: center; position: relative; }
         .footer-title h2 { font-family: var(--font-display); font-size: clamp(3rem, 10vw, 14rem); font-weight: 900; line-height: 0.85; text-transform: uppercase; margin-bottom: 4rem; white-space: nowrap; letter-spacing: -0.015em; }
 
@@ -210,6 +258,10 @@
                     <div class="bullet-point"><span>•</span> Developed cinematic developer stat visualizer with dynamic canvas particle constellation.</div>
                     <div class="bullet-point"><span>•</span> Created offline telemetric analyzer to visualize local git logs in-browser.</div>
                     <div class="card-tags"><span class="tag">JavaScript</span><span class="tag">GSAP</span><span class="tag">HTML5 Canvas</span><span class="tag">CSS3</span></div>
+                    <div class="project-links">
+                        <a href="/gitpulse" target="_blank" class="project-btn primary"><i class="fas fa-external-link-alt"></i> Launch Live</a>
+                        <a href="https://github.com/rahulagarwal18/gitpulse" target="_blank" class="project-btn secondary"><i class="fab fa-github"></i> View Source</a>
+                    </div>
                 </div>
                 <div class="info-card">
                     <h4 style="color:var(--accent); font-weight:900; margin-bottom:1.2rem; letter-spacing:5px;">2025 | AI SCANNER</h4>
@@ -217,6 +269,9 @@
                     <div class="bullet-point"><span>•</span> Engineered real-time scanning pipeline with live camera integration.</div>
                     <div class="bullet-point"><span>•</span> Automated result generation and CSV export system.</div>
                     <div class="card-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Flask</span><span class="tag">SQLite</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rahulagarwal18/omrscanner" target="_blank" class="project-btn secondary"><i class="fab fa-github"></i> View Source</a>
+                    </div>
                 </div>
                 <div class="info-card">
                     <h4 style="color:var(--accent-blue); font-weight:900; margin-bottom:1.2rem; letter-spacing:5px;">2025 | AR/VR & IOT</h4>
@@ -224,24 +279,36 @@
                     <div class="bullet-point"><span>•</span> Developed interactive 360° campus virtual tour with directional navigation.</div>
                     <div class="bullet-point"><span>•</span> Integrated IoT robotic guide for physical navigation assistance.</div>
                     <div class="card-tags"><span class="tag">JavaScript</span><span class="tag">Panolens.js</span><span class="tag">IoT</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rahulagarwal18/yprstreetview" target="_blank" class="project-btn secondary"><i class="fab fa-github"></i> View Source</a>
+                    </div>
                 </div>
                 <div class="info-card">
                     <h4 style="color:var(--accent); font-weight:900; margin-bottom:1.2rem; letter-spacing:5px;">2024 | BIOMETRICS</h4>
                     <h3 style="font-size:2.8rem; font-family:var(--font-display); font-weight:800; margin-bottom:2rem;">Face Recognition System</h3>
                     <div class="bullet-point"><span>•</span> Built AI-based attendance tracking with high accuracy identification.</div>
                     <div class="card-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Flask</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rahulagarwal18/Automation-Project-" target="_blank" class="project-btn secondary"><i class="fab fa-github"></i> View Source</a>
+                    </div>
                 </div>
                 <div class="info-card">
                     <h4 style="color:var(--accent-blue); font-weight:900; margin-bottom:1.2rem; letter-spacing:5px;">2025 | UTILITY</h4>
                     <h3 style="font-size:2.8rem; font-family:var(--font-display); font-weight:800; margin-bottom:2rem;">Barcode Generator Web Tool</h3>
                     <div class="bullet-point"><span>•</span> Developed bulk barcode generator with PDF export for library systems.</div>
                     <div class="card-tags"><span class="tag">Flask</span><span class="tag">ReportLab</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rahulagarwal18/barcode-generator" target="_blank" class="project-btn secondary"><i class="fab fa-github"></i> View Source</a>
+                    </div>
                 </div>
                 <div class="info-card">
                     <h4 style="color:var(--accent); font-weight:900; margin-bottom:1.2rem; letter-spacing:5px;">2025 | DL</h4>
                     <h3 style="font-size:2.8rem; font-family:var(--font-display); font-weight:800; margin-bottom:2rem;">CNN Image Classifier</h3>
                     <div class="bullet-point"><span>•</span> Achieved 85% test accuracy on CIFAR-10 via CNN architecture.</div>
                     <div class="card-tags"><span class="tag">TensorFlow</span><span class="tag">Keras</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rahulagarwal18/parsing" target="_blank" class="project-btn secondary"><i class="fab fa-github"></i> View Source</a>
+                    </div>
                 </div>
             </div>
         </section>
