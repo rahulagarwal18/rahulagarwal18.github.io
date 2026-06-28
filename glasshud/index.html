@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassHUD — Premium Cyberpunk Glassmorphism CSS Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-glow" id="mouseGlow"></div>
+
+    <header>
+        <div class="logo"><i class="fas fa-cubes"></i> Glass<span>HUD</span></div>
+        <p class="subtitle">Sleek Cyberpunk Glassmorphism UI & CSS Generator</p>
+    </header>
+
+    <main class="builder-container">
+        <!-- Controls Panel -->
+        <section class="controls-panel glass-card">
+            <h2><i class="fas fa-sliders-h text-accent"></i> Core Telemetry</h2>
+            
+            <div class="control-group">
+                <label for="blurSlider">Backdrop Blur: <span id="valBlur">20</span>px</label>
+                <input type="range" id="blurSlider" min="0" max="40" value="20">
+            </div>
+
+            <div class="control-group">
+                <label for="opacitySlider">Backdrop Opacity: <span id="valOpacity">0.05</span></label>
+                <input type="range" id="opacitySlider" min="0" max="95" value="5">
+            </div>
+
+            <div class="control-group">
+                <label for="colorSlider">Base Hue: <span id="valHue">220</span>°</label>
+                <input type="range" id="colorSlider" min="0" max="360" value="220">
+            </div>
+
+            <div class="control-group">
+                <label for="borderSlider">Border Opacity: <span id="valBorder">0.12</span></label>
+                <input type="range" id="borderSlider" min="0" max="95" value="12">
+            </div>
+
+            <div class="control-group">
+                <label for="radiusSlider">Border Radius: <span id="valRadius">24</span>px</label>
+                <input type="range" id="radiusSlider" min="0" max="50" value="24">
+            </div>
+
+            <div class="control-group">
+                <label for="glowSlider">Neon Glow Spread: <span id="valGlow">30</span>px</label>
+                <input type="range" id="glowSlider" min="0" max="100" value="30">
+            </div>
+        </section>
+
+        <!-- Preview & Output Panel -->
+        <section class="preview-panel">
+            <div class="preview-wrapper">
+                <div class="preview-label">LIVE PREVIEW</div>
+                <!-- Dynamic Card under preview control -->
+                <div class="preview-card" id="previewCard">
+                    <div class="card-header">
+                        <div class="profile-avatar">RA</div>
+                        <div>
+                            <h3>Rahul Agarwal</h3>
+                            <p>@rahulagarwal18</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Creative Full Stack Developer building futuristic, glassmorphic HUD interfaces and AI automation pipelines.</p>
+                        <div class="stats-row">
+                            <div class="stat-item"><span class="num">172</span><span class="lbl">Stars</span></div>
+                            <div class="stat-item"><span class="num">28</span><span class="lbl">Repos</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Code Output -->
+            <div class="output-wrapper glass-card">
+                <h3><i class="fas fa-code text-accent"></i> Output CSS</h3>
+                <pre><code id="cssOutput"></code></pre>
+                <button id="copyCssBtn" class="btn-glow-pulse">
+                    <span><i class="far fa-copy"></i> COPY CSS</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Created by <a href="https://github.com/rahulagarwal18" target="_blank">Rahul Agarwal</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
