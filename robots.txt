@@ -3,56 +3,47 @@
 # Rahul Agarwal — Full Stack Developer & AI/ML Specialist
 # ============================================
 
-# Allow all search engines full access
+# Allow all bots full access (including AI crawlers)
 User-agent: *
 Allow: /
 Disallow: /.git/
 Disallow: /.nojekyll
 
-# Google Bot — Full access with crawl optimization
+# Google Bot
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
 
-# Google Image Bot — Allow image indexing
+# Google Image Bot
 User-agent: Googlebot-Image
 Allow: /
-Allow: /avatar.png
 
 # Bing Bot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
-# Yandex Bot
-User-agent: Yandex
-Allow: /
-Crawl-delay: 3
-
-# Baidu Bot
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 5
-
-# DuckDuckGo Bot
-User-agent: DuckDuckBot
-Allow: /
-
-# Block AI training scrapers (protect content)
+# AI Crawlers — ALLOWED (maximize reach & citations)
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 # ============================================
 # Sitemap location
