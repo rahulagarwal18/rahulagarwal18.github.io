@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rahulagarwal.tech/sitemap.xml
+Sitemap: https://rahul-agarwal.in/sitemap.xml
