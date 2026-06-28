@@ -1,4 +1,65 @@
+# ============================================
+# robots.txt for rahul-agarwal.in
+# Rahul Agarwal — Full Stack Developer & AI/ML Specialist
+# ============================================
+
+# Allow all search engines full access
 User-agent: *
 Allow: /
+Disallow: /.git/
+Disallow: /.nojekyll
 
+# Google Bot — Full access with crawl optimization
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Image Bot — Allow image indexing
+User-agent: Googlebot-Image
+Allow: /
+Allow: /avatar.png
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yandex Bot
+User-agent: Yandex
+Allow: /
+Crawl-delay: 3
+
+# Baidu Bot
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+# DuckDuckGo Bot
+User-agent: DuckDuckBot
+Allow: /
+
+# Block AI training scrapers (protect content)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# ============================================
+# Sitemap location
+# ============================================
 Sitemap: https://rahul-agarwal.in/sitemap.xml
+
+# ============================================
+# Host declaration
+# ============================================
+Host: https://rahul-agarwal.in

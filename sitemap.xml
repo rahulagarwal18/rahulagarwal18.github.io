@@ -1,21 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ========== MAIN PORTFOLIO ========== -->
   <url>
     <loc>https://rahul-agarwal.in/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rahul-agarwal.in/avatar.png</image:loc>
+      <image:title>Rahul Agarwal - Full Stack Developer and AI/ML Specialist</image:title>
+      <image:caption>Portfolio avatar of Rahul Agarwal, a Full Stack Developer and AI/ML Specialist based in India</image:caption>
+    </image:image>
   </url>
+
+  <!-- ========== LIVE WEB APPS ========== -->
   <url>
     <loc>https://rahul-agarwal.in/glasshud/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://rahul-agarwal.in/gitpulse/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ========== GITHUB PROFILE ========== -->
+  <url>
+    <loc>https://github.com/rahulagarwal18</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- ========== FEATURED PROJECT REPOSITORIES ========== -->
+  <url>
+    <loc>https://github.com/rahulagarwal18/gitpulse</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/glasshud</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/omrscanner</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/yprstreetview</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/Automation-Project-</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/Event-booking-app-figma</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/barcode-generator</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/parsing</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/rahulagarwal18/git-contributions-booster</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ========== SOCIAL PROFILES ========== -->
+  <url>
+    <loc>https://www.linkedin.com/in/rahul-agarwal-ai/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
